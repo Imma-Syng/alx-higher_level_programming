@@ -1,0 +1,51 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("When?")
+When?
+<BLANKLINE>
+
+>>> text_indentation("Good, job.")
+Good job.
+<BLANKLINE>
+
+>>> text_indentation("  ")
+
+>>> text_indantation("See.  You.")
+See.
+<BLANKLINE>
+You.
+<BLANKLINE>
+
+>>> text_indentation("  Good.")
+Good.
+<BLANKLINE>
+
+>>> text_indentation("Yes.  ")
+Yes.
+<BLANKLINE>
+
+>>> text_indentation("He is \n good.")
+He is
+good.
+<BLANKLINE>
+
+>>> text_indentation("\n\n\n He is good.")
+<BLANKLINE>
+<BLANKLINE>
+He is good.
+<BLANKLINE>
+
+>>> text_indentation("We won:")
+We won:
+<BLANKLINE>
+
+>>> text_indentation(1)
+Traceback (most recent call last):
+TypeError: text must be string
+
+>>> text_indentation(None)
+Traceback  (most recent call last):
+TypeError: text must be string
+
+>>> text_indentation("num:" 1)
+Traceback (most recent call last):
+TypeError: text must be string
